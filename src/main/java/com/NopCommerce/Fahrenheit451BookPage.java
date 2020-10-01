@@ -3,11 +3,11 @@ package com.NopCommerce;
 import org.openqa.selenium.By;
 
 public class Fahrenheit451BookPage extends Utils {
-    By _changeQuantity = By.xpath("//input[@id='product_enteredQuantity_37']");
-    By _addBookInWishList = By.id("add-to-wishlist-button-37");
-    By _verifyWishList = By.className("content");
-    By _addBookInToCart = By.id("add-to-cart-button-37");
-    By _goToCartFromGreenMessage = By.xpath("//a[contains(text(),'shopping cart')]");
+    private By _changeQuantity = By.xpath("//input[@id='product_enteredQuantity_37']");
+    private By _addBookInWishList = By.id("add-to-wishlist-button-37");
+    private By _verifyWishList = By.className("content");
+    private By _addBookInToCart = By.id("add-to-cart-button-37");
+    private By _goToCartFromGreenMessage = By.xpath("//a[contains(text(),'shopping cart')]");
 
     public void changeQuantity() {
         //clear the Quantity

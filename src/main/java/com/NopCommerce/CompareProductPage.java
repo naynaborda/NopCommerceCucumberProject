@@ -3,10 +3,10 @@ package com.NopCommerce;
 import org.openqa.selenium.By;
 
 public class CompareProductPage extends Utils {
-    By _customTShirt = By.xpath("//a[contains(text(),'Custom T-Shirt')]");
-    By _clearComparision = By.xpath("//a[@class='clear-list']");
-    By _noProductForCompare = By.xpath("//div[@class='no-data']");
-    By _oversizedWomenTShirt = By.linkText("Oversized Women T-Shirt");
+    private By _customTShirt = By.xpath("//a[contains(text(),'Custom T-Shirt')]");
+    private By _clearComparision = By.xpath("//a[@class='clear-list']");
+    private By _noProductForCompare = By.xpath("//div[@class='no-data']");
+    private By _oversizedWomenTShirt = By.linkText("Oversized Women T-Shirt");
 
     public String verifyCustomTShirt() {
         //asserting product name custom t-shirt

@@ -62,7 +62,7 @@ public class TestSuit2 extends BaseTest {
         //click on checkout
         cartPage.clickOnCheckOut();
         //click on checkout as guest
-        checkoutAsGuestPage.checkOutAsGuest();
+        checkoutAsGuestPage.clickOnCheckOutAsGuest();
         //filling Personal details for checkout
         onePageCheckOutPage.fillingPersonalDetailsForCheckOut();
         //Click on Continue from one page checkout

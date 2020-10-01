@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BasePage {
-    static WebDriver driver;
+    //This is project is for test ng,maven,cucumber and load property practice
+
+    protected static WebDriver driver;
 
 }

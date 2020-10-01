@@ -44,6 +44,9 @@ public class TestSuit extends BaseTest {
         loginPage.fillingLogInDetails();
         //click on log in button
         loginPage.clickOnLoginButton();
+        String expectedText = "My account";
+        String actualText = loginPage.logInConfirmationMessage();
+        Assert.assertEquals(actualText, expectedText, "Login unsuccessful");
 
 
     }
@@ -59,7 +62,7 @@ public class TestSuit extends BaseTest {
         fahrenheit451BookPage.changeQuantity();
         //add the book in wishlist
         fahrenheit451BookPage.addProductInWishList();
-        //verify "The book has been added to you wishlist from testNg
+        //verify "The book has been added to you wishlist  from top green line from testNg
         String expectedMessage = "The product has been added to your wishlist";
         String actualMessage = fahrenheit451BookPage.verifyBookAddedToWishlist();
         Assert.assertEquals(actualMessage, expectedMessage, "Book is not in wish list");
@@ -72,7 +75,7 @@ public class TestSuit extends BaseTest {
         //click on checkout
         cartPage.clickOnCheckOut();
         //click on checkout as guest
-        checkoutAsGuestPage.checkOutAsGuest();
+        checkoutAsGuestPage.clickOnCheckOutAsGuest();
         //filling Personal details for checkout
         onePageCheckOutPage.fillingPersonalDetailsForCheckOut();
         //Click on Continue from one page checkout
@@ -118,7 +121,7 @@ public class TestSuit extends BaseTest {
         //take again screenshot with green line on top with message"The product has been added to your product comparison
         clothingPage.secondScreenshot();
         //click on product comparision from green line link
-        clothingPage.productComparisionFromGreenLink();
+        clothingPage.productComparisonFromGreenLink();
         //asserting product name custom t-shirt from testNg
         String expectedName = "Custom T-Shirt";
         String actualName = compareProductPage.verifyCustomTShirt();
@@ -151,7 +154,7 @@ public class TestSuit extends BaseTest {
         //add  to comparision oversized women t-shirt
         clothingPage.addOverSizedWomenTShirtToComparison();
         //click on product comparision from green line link
-        clothingPage.productComparisionFromGreenLink();
+        clothingPage.productComparisonFromGreenLink();
         //asserting product name oversized women t-shirt from testNg
         String expectedTShirtName = "Oversized Women T-Shirt";
         String actualTShirtName = compareProductPage.verifyOverSizedWomenTShirt();

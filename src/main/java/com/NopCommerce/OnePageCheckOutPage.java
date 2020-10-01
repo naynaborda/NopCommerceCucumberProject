@@ -3,26 +3,26 @@ package com.NopCommerce;
 import org.openqa.selenium.By;
 
 public class OnePageCheckOutPage extends Utils {
-    By _firstName = By.id("BillingNewAddress_FirstName");
-    By _lastName = By.id("BillingNewAddress_LastName");
-    By _email = By.xpath("//input[@id='BillingNewAddress_Email']");
-    By _country = By.xpath("//select[@id='BillingNewAddress_CountryId']");
-    By _city = By.id("BillingNewAddress_City");
-    By _address = By.id("BillingNewAddress_Address1");
-    By _postCode = By.id("BillingNewAddress_ZipPostalCode");
-    By _phoneNumber = By.id("BillingNewAddress_PhoneNumber");
-    By _continueBilling = By.xpath("//div[@id='billing-buttons-container']//input[@class='button-1 new-address-next-step-button']");
-    By _continueShipping = By.cssSelector("div.master-wrapper-page:nth-child(6) div.master-wrapper-content div.master-column-wrapper div.center-1 div.page.checkout-page div.page-body.checkout-data ol.opc li.tab-section.allow.active:nth-child(3) div.step.a-item form:nth-child(1) div.buttons:nth-child(2) > input.button-1.shipping-method-next-step-button");
-    By _creditCard = By.xpath("//input[@id='paymentmethod_1']");
-    By _continueOpcPaymentMethod = By.xpath("//input[@class='button-1 payment-method-next-step-button']");
-    By _selectCreditCard = By.id("CreditCardType");
-    By _cardHolderName = By.id("CardholderName");
-    By _cardNumber = By.id("CardNumber");
-    By _selectExpireMonth = By.id("ExpireMonth");
-    By _selectExpireYear = By.id("ExpireYear");
-    By _cardCode = By.id("CardCode");
-    By _continueOpcPaymentInfo = By.xpath("//input[@class='button-1 payment-info-next-step-button']");
-    By _confirmOrder = By.cssSelector("div.master-wrapper-page:nth-child(6) div.master-wrapper-content div.master-column-wrapper div.center-1 div.page.checkout-page div.page-body.checkout-data ol.opc li.tab-section.allow.active:nth-child(6) div.step.a-item div.buttons:nth-child(2) > input.button-1.confirm-order-next-step-button");
+    private By _firstName = By.id("BillingNewAddress_FirstName");
+    private By _lastName = By.id("BillingNewAddress_LastName");
+    private By _email = By.xpath("//input[@id='BillingNewAddress_Email']");
+    private By _country = By.xpath("//select[@id='BillingNewAddress_CountryId']");
+    private By _city = By.id("BillingNewAddress_City");
+    private By _address = By.id("BillingNewAddress_Address1");
+    private By _postCode = By.id("BillingNewAddress_ZipPostalCode");
+    private By _phoneNumber = By.id("BillingNewAddress_PhoneNumber");
+    private By _continueBilling = By.xpath("//div[@id='billing-buttons-container']//input[@class='button-1 new-address-next-step-button']");
+    private By _continueShipping = By.cssSelector("div.master-wrapper-page:nth-child(6) div.master-wrapper-content div.master-column-wrapper div.center-1 div.page.checkout-page div.page-body.checkout-data ol.opc li.tab-section.allow.active:nth-child(3) div.step.a-item form:nth-child(1) div.buttons:nth-child(2) > input.button-1.shipping-method-next-step-button");
+    private By _creditCard = By.xpath("//input[@id='paymentmethod_1']");
+    private By _continueOpcPaymentMethod = By.xpath("//input[@class='button-1 payment-method-next-step-button']");
+    private By _selectCreditCard = By.id("CreditCardType");
+    private By _cardHolderName = By.id("CardholderName");
+    private By _cardNumber = By.id("CardNumber");
+    private By _selectExpireMonth = By.id("ExpireMonth");
+    private By _selectExpireYear = By.id("ExpireYear");
+    private By _cardCode = By.id("CardCode");
+    private By _continueOpcPaymentInfo = By.xpath("//input[@class='button-1 payment-info-next-step-button']");
+    private By _confirmOrder = By.cssSelector("div.master-wrapper-page:nth-child(6) div.master-wrapper-content div.master-column-wrapper div.center-1 div.page.checkout-page div.page-body.checkout-data ol.opc li.tab-section.allow.active:nth-child(6) div.step.a-item div.buttons:nth-child(2) > input.button-1.confirm-order-next-step-button");
 
 
     public void fillingPersonalDetailsForCheckOut() {

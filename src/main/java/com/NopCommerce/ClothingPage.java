@@ -2,13 +2,13 @@ package com.NopCommerce;
 
 import org.openqa.selenium.By;
 
-public class ClothingPage extends Utils{
-    By _sortBy = By.id("products-orderby");
-    By _display = By.id("products-pagesize");
-    By _list = By.linkText("List");
-    By _addCustomTiShirt = By.xpath("//div[@class='page-body']//div[2]//div[1]//div[2]//div[3]//div[2]//input[2]");
-    By _addSecondTiShirt = By.xpath("//div[@class='product-list']//div[3]//div[1]//div[2]//div[3]//div[2]//input[2]");
-    By _productComparisonLink = By.linkText("product comparison");
+public class ClothingPage extends Utils {
+    private By _sortBy = By.id("products-orderby");
+    private By _display = By.id("products-pagesize");
+    private By _list = By.linkText("List");
+    private By _addCustomTiShirt = By.xpath("//div[@class='page-body']//div[2]//div[1]//div[2]//div[3]//div[2]//input[2]");
+    private By _addSecondTiShirt = By.xpath("//div[@class='product-list']//div[3]//div[1]//div[2]//div[3]//div[2]//input[2]");
+    private By _productComparisonLink = By.linkText("product comparison");
 
 
     public void sortByLowToHighPrice() {
@@ -40,7 +40,7 @@ public class ClothingPage extends Utils{
     }
 
     public void addOverSizedWomenTShirtToComparison() {
-        //add Oversized Women T-Shirt to compare list
+        //add Over-sized Women T-Shirt to compare list
         clickOnElement(_addSecondTiShirt);
 
     }
@@ -52,8 +52,8 @@ public class ClothingPage extends Utils{
 
     }
 
-    public void productComparisionFromGreenLink() {
-        //click on product comparision from green line link
+    public void productComparisonFromGreenLink() {
+        //click on product comparison from green line link
         clickOnElement(_productComparisonLink);
 
     }

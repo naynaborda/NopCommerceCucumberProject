@@ -7,6 +7,8 @@ import org.testng.annotations.Parameters;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest extends Utils {
+    LoadProp loadProp = new LoadProp();
+
     //this before method is for passing parameter from testNg xml file
 //    @BeforeMethod
 //   // @Parameters({"browserName"})
@@ -22,7 +24,9 @@ public class BaseTest extends Utils {
     @BeforeMethod
     public void openBrowser() {
         BrowserSelector browserSelector = new BrowserSelector();
-        browserSelector.selectBrowser("Firefox");
+        // browserSelector.selectBrowser("Firefox");
+        browserSelector.selectBrowser(loadProp.readProperties("browserName"));
+        driver.get(loadProp.readProperties("url"));
         driver.get("https://demo.nopcommerce.com/");
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();

@@ -3,11 +3,11 @@ package com.NopCommerce;
 import org.openqa.selenium.By;
 
 public class HomePage extends Utils {
-    By _registerButton = By.className("ico-register");
-    By _loginButton = By.className("ico-login");
-    By _apparelButton = By.linkText("Apparel");
-    By _bookButton = By.linkText("Books");
-    By _giftCardButton = By.linkText("Gift Cards");
+    private By _registerButton = By.className("ico-register");
+    private By _loginButton = By.className("ico-login");
+    private By _apparelButton = By.linkText("Apparel");
+    private By _bookButton = By.linkText("Books");
+    private By _giftCardButton = By.linkText("Gift Cards");
 
 
     public void clickOnRegisterBtn() {
