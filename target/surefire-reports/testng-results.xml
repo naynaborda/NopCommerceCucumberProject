@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="11" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="155009" started-at="2020-10-26T15:39:33 GMT" finished-at="2020-10-26T15:42:08 GMT">
+    <groups>
+      <group name="regression">
+        <method signature="TestSuit.verifyingRegisterSuccessfully()[pri:4, instance:com.NopCommerce.TestSuit@5025a98f]" name="verifyingRegisterSuccessfully" class="com.NopCommerce.TestSuit"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="TestSuit.buyingBook()[pri:0, instance:com.NopCommerce.TestSuit@5025a98f]" name="buyingBook" class="com.NopCommerce.TestSuit"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="TestSuit.addingVirtualGiftCard()[pri:3, instance:com.NopCommerce.TestSuit@5025a98f]" name="addingVirtualGiftCard" class="com.NopCommerce.TestSuit"/>
+        <method signature="TestSuit.clothingShoppingWithoutScreenShot()[pri:2, instance:com.NopCommerce.TestSuit@5025a98f]" name="clothingShoppingWithoutScreenShot" class="com.NopCommerce.TestSuit"/>
+        <method signature="TestSuit.verifyingRegisterSuccessfully()[pri:4, instance:com.NopCommerce.TestSuit@5025a98f]" name="verifyingRegisterSuccessfully" class="com.NopCommerce.TestSuit"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Surefire test" duration-ms="155009" started-at="2020-10-26T15:39:33 GMT" finished-at="2020-10-26T15:42:08 GMT">
+      <class name="com.NopCommerce.TestSuit2">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.NopCommerce.TestSuit2@49993335]" name="openBrowser" is-config="true" duration-ms="9606" started-at="2020-10-26T15:40:50 GMT" finished-at="2020-10-26T15:41:00 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.NopCommerce.TestSuit2@49993335]" name="test1" duration-ms="0" started-at="2020-10-26T15:41:00 GMT" finished-at="2020-10-26T15:41:00 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.NopCommerce.TestSuit2@49993335]" name="openBrowser" is-config="true" duration-ms="16580" started-at="2020-10-26T15:41:00 GMT" finished-at="2020-10-26T15:41:16 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.NopCommerce.TestSuit2@49993335]" name="openBrowser" is-config="true" duration-ms="19287" started-at="2020-10-26T15:41:16 GMT" finished-at="2020-10-26T15:41:36 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="test3()[pri:2, instance:com.NopCommerce.TestSuit2@49993335]" name="test3" duration-ms="0" started-at="2020-10-26T15:41:16 GMT" finished-at="2020-10-26T15:41:16 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test4()[pri:3, instance:com.NopCommerce.TestSuit2@49993335]" name="test4" duration-ms="0" started-at="2020-10-26T15:41:36 GMT" finished-at="2020-10-26T15:41:36 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.NopCommerce.TestSuit2@49993335]" name="openBrowser" is-config="true" duration-ms="17200" started-at="2020-10-26T15:41:36 GMT" finished-at="2020-10-26T15:41:53 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="buyingBook()[pri:5, instance:com.NopCommerce.TestSuit2@49993335]" name="buyingBook" duration-ms="14683" started-at="2020-10-26T15:41:53 GMT" finished-at="2020-10-26T15:42:08 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyingBook -->
+      </class> <!-- com.NopCommerce.TestSuit2 -->
+      <class name="com.NopCommerce.TestSuit">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.NopCommerce.TestSuit@5025a98f]" name="openBrowser" is-config="true" duration-ms="10622" started-at="2020-10-26T15:39:33 GMT" finished-at="2020-10-26T15:39:43 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="buyingBook()[pri:0, instance:com.NopCommerce.TestSuit@5025a98f]" name="buyingBook" duration-ms="13275" started-at="2020-10-26T15:39:43 GMT" finished-at="2020-10-26T15:39:57 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyingBook -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.NopCommerce.TestSuit@5025a98f]" name="openBrowser" is-config="true" duration-ms="8290" started-at="2020-10-26T15:39:57 GMT" finished-at="2020-10-26T15:40:05 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="clothingShoppingWithoutScreenShot()[pri:2, instance:com.NopCommerce.TestSuit@5025a98f]" name="clothingShoppingWithoutScreenShot" duration-ms="6030" started-at="2020-10-26T15:40:05 GMT" finished-at="2020-10-26T15:40:11 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clothingShoppingWithoutScreenShot -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.NopCommerce.TestSuit@5025a98f]" name="openBrowser" is-config="true" duration-ms="9671" started-at="2020-10-26T15:40:11 GMT" finished-at="2020-10-26T15:40:21 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="addingVirtualGiftCard()[pri:3, instance:com.NopCommerce.TestSuit@5025a98f]" name="addingVirtualGiftCard" duration-ms="10554" started-at="2020-10-26T15:40:21 GMT" finished-at="2020-10-26T15:40:31 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingVirtualGiftCard -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.NopCommerce.TestSuit@5025a98f]" name="openBrowser" is-config="true" duration-ms="9935" started-at="2020-10-26T15:40:31 GMT" finished-at="2020-10-26T15:40:41 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="verifyingRegisterSuccessfully()[pri:4, instance:com.NopCommerce.TestSuit@5025a98f]" name="verifyingRegisterSuccessfully" duration-ms="9229" started-at="2020-10-26T15:40:41 GMT" finished-at="2020-10-26T15:40:50 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingRegisterSuccessfully -->
+      </class> <!-- com.NopCommerce.TestSuit -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

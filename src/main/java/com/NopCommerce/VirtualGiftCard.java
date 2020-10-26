@@ -5,8 +5,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class VirtualGiftCard extends Utils {
-    static String email = "test" + timeStamp() + "@test.com";
-    static String name = "Ram";
+   // static String email = "test" + timeStamp() + "@test.com";
+    //static String name = "Ram";
     private By _recipientName = By.id("giftcard_43_RecipientName");
     private By _recipientEMail = By.id("giftcard_43_RecipientEmail");
     private By _emailFriend = By.xpath("//input[@value='Email a friend']");
@@ -32,11 +32,11 @@ public class VirtualGiftCard extends Utils {
 
     }
 
-    public void clickOnLoginButton() {
-        //Click on Email a friend
-        clickOnElement(_emailFriend);
-
-    }
+//    public void clickOnLoginButton() {
+//        //Click on Email a friend
+//        clickOnElement(_emailFriend);
+//
+//    }
 
 
 }

@@ -2,9 +2,11 @@
 
 <suite name="Suite1" verbose="1">
     <test name="SmokeTest">
+
 <parameter name="browserName" value="firefox"></parameter>
         <classes>
             <class name="com.NopCommerce.TestSuit">
+
                 <methods>
                     <include name="verifyingRegisterSuccessfully" />
                     <exclude name=" buyingBook"></exclude>

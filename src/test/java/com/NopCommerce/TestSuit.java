@@ -36,6 +36,8 @@ public class TestSuit extends BaseTest {
         String expectedResult = "Your registration completed";
         String actualResult = registerResultPage.registrationConfirmationMessageText();
         Assert.assertEquals(actualResult, expectedResult, "User is unable to register");
+        Assert.assertEquals(actualResult,expectedResult,"");
+
         //click on logout
         registerResultPage.logOut();
         //click on login
@@ -175,7 +177,7 @@ public class TestSuit extends BaseTest {
         //click on register button
         homePage.clickOnRegisterBtn();
         //filling Registration details
-        registrationPage.fillTheRegistrationFormForVirtualGiftCard();
+        registrationPage.fillTheRegistrationForm();
         //click on register button from registration page
         registrationPage.clickOnRegisterButton1();
         //click on logout
@@ -183,7 +185,7 @@ public class TestSuit extends BaseTest {
         //click on login
         homePage.clickOnLoginBtn();
         //filling login details
-        loginPage.fillingLogInDetailsForVirtualGiftCard();
+        loginPage.fillingLogInDetails();
         //click on login button from login page
         loginPage.clickOnLoginButton();
         //Click on GiftCard

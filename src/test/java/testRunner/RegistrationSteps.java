@@ -75,4 +75,10 @@ public class RegistrationSteps {
 
     }
 
+
+    @And("^User enter \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
+    public void userEnter(String FirstName, String LastName, String email, String Password, String ConfirmPassword) throws Throwable {
+        registrationPage.fillTheRegistrationForm();
+
+    }
 }

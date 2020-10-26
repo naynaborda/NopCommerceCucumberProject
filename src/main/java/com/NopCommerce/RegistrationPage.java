@@ -4,8 +4,8 @@ import org.openqa.selenium.By;
 
 public class RegistrationPage extends Utils {
     LoadProp loadProp = new LoadProp();
-    static String email = "test" + timeStamp() + "@test.com";
-    static String email1 = "Test1" + timeStamp() + "@test.com";
+    static String email ;
+    //static String email1 = "Test1" + timeStamp() + "@test.com";
 
     private By _gender = By.id("gender-male");
     private By _firstName = By.id("FirstName");
@@ -34,6 +34,7 @@ public class RegistrationPage extends Utils {
         //select Date of year
         selectValueFromDropDown(_dateOfBirthYear, "1986");
         //type email
+        email="test" + timeStamp() + "@test.com";
         typeText(_email, email);
         //type password
         typeText(_password, loadProp.readProperties("password"));
@@ -49,31 +50,31 @@ public class RegistrationPage extends Utils {
         clickOnElement(_registerBtn);
     }
 
-    public void fillTheRegistrationFormForVirtualGiftCard() {
-        //click on male
-        clickOnElement(_gender);
-        //type FirstName
-        //typeText(_firstName, "Ram");
-        typeText(_firstName, loadProp.readProperties("firstName"));
-        //type LastName
-        // typeText(_lastName, "Sita");
-        typeText(_lastName, loadProp.readProperties("lastName"));
-        //select Date of Birthday
-        selectValueFromDropDown(_dateOfBirthDay, "2");
-        //select Date of Month
-        selectValueFromDropDown(_dateOfBirthMonth, "March");
-        //select Date of year
-        selectValueFromDropDown(_dateOfBirthYear, "1986");
-        //type email
-        typeText(_email, email1);
-        //type password
-        //typeText(_password, "sitaram");
-        typeText(_password, loadProp.readProperties("password"));
-        //type confirm password
-        //typeText(_confirmPassword, "sitaram");
-        typeText(_confirmPassword, loadProp.readProperties("confirmPassword"));
-
-    }
+//    public void fillTheRegistrationFormForVirtualGiftCard() {
+//        //click on male
+//        clickOnElement(_gender);
+//        //type FirstName
+//        //typeText(_firstName, "Ram");
+//        typeText(_firstName, loadProp.readProperties("firstName"));
+//        //type LastName
+//        // typeText(_lastName, "Sita");
+//        typeText(_lastName, loadProp.readProperties("lastName"));
+//        //select Date of Birthday
+//        selectValueFromDropDown(_dateOfBirthDay, "2");
+//        //select Date of Month
+//        selectValueFromDropDown(_dateOfBirthMonth, "March");
+//        //select Date of year
+//        selectValueFromDropDown(_dateOfBirthYear, "1986");
+//        //type email
+//        typeText(_email, email1);
+//        //type password
+//        //typeText(_password, "sitaram");
+//        typeText(_password, loadProp.readProperties("password"));
+//        //type confirm password
+//        //typeText(_confirmPassword, "sitaram");
+//        typeText(_confirmPassword, loadProp.readProperties("confirmPassword"));
+//
+//    }
 
 
 }

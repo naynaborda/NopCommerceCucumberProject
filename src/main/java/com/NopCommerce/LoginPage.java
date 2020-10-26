@@ -28,12 +28,12 @@ public class LoginPage extends Utils {
         return (getText(_account));
     }
 
-    public void fillingLogInDetailsForVirtualGiftCard() {
-        //type registered email
-        typeText(_email, RegistrationPage.email1);
-        //type password
-        typeText(_password, "sitaram");
-
-
-    }
+//    public void fillingLogInDetailsForVirtualGiftCard() {
+//        //type registered email
+//        typeText(_email, RegistrationPage.email1);
+//        //type password
+//        typeText(_password, "sitaram");
+//
+//
+//    }
 }

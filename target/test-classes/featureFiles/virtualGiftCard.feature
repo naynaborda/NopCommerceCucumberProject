@@ -1,4 +1,5 @@
 Feature: adding a virtual gift card in the cart and send an email a friend functionality
+
   Scenario: To Verify User should able to add virtual gift card in the cart send an email a friend and see confirmation message
     Given  User is on the home page
     When User click on the register button
@@ -40,5 +41,5 @@ Feature: adding a virtual gift card in the cart and send an email a friend funct
 #        |FirstName|LastName|email            |Password|Confirm Password|Recipient's Name|Recipient's Email|User Name    |User Email      |Friend's email|User email address|Personal message|
 #        |Ram      |Sita    |ramsita@test.com |sitaram |sitaram         |Sonal            |sonal@test.com   |Ram Sita    |ramsita@test.com|sonal@test.com|ramsita@test.com  |Birthday Gift   |
 #
-#
+
 

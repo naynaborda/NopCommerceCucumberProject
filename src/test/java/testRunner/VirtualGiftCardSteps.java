@@ -13,7 +13,7 @@ public class VirtualGiftCardSteps {
 
     @When("^User enter all the Mandatory/Required field on the registration page for virtual gift card$")
     public void user_enter_all_the_Mandatory_Required_field_on_the_registration_page_for_virtual_gift_card() throws Throwable {
-        registrationPage.fillTheRegistrationFormForVirtualGiftCard();
+        registrationPage.fillTheRegistrationForm();
 
 
     }
@@ -21,7 +21,7 @@ public class VirtualGiftCardSteps {
 
     @When("^User enter login details for virtual gift card$")
     public void user_enter_login_details_for_virtual_gift_card() throws Throwable {
-        loginPage.fillingLogInDetailsForVirtualGiftCard();
+        loginPage.fillingLogInDetails();
 
 
     }
